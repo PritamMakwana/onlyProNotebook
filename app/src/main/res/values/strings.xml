@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ProNotebook</string>
+    <string name="ADD">ADD</string>
+    <string name="add_title">Enter Title</string>
+    <string name="add_note">Enter Note</string>
+
+
+</resources>
