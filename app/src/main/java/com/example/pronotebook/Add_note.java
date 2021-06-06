@@ -20,6 +20,8 @@ public class Add_note extends MainActivity {
     EditText addnote,addtitle;
     MyAdapter myAdapter;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
