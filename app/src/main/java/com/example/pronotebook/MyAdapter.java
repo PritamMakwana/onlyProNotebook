@@ -1,6 +1,7 @@
 package com.example.pronotebook;
 
 import android.content.Context;
+import android.database.Cursor;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,17 +12,31 @@ import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class MyAdapter extends RecyclerView.Adapter <MyAdapter.ViewHolder>{
    private List<note> list;
    private Context context;
+   private Cursor cursor;
+   private  String[] from;
+   private  int[] to;
+   private  int i;
 
-    public MyAdapter(List<note>list,Context context) {
+//    public MyAdapter(List<note>list,Context context) {
+//
+//        this.list=list;
+//        this.context=context;
+//
+//    }
 
+    public MyAdapter(ArrayList<note> list, Context context, Cursor cursor, String[] from, int[] to, int i) {
         this.list=list;
         this.context=context;
-
+        this.cursor=cursor;
+        this.from=from;
+        this.to=to;
+        this.i=i;
     }
 
     @NonNull
